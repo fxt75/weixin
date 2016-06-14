@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+>
+  <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:layout_weight="1"
+                android:id="@+id/fl_container"/>
+        <RadioGroup android:layout_width="match_parent"
+                     android:layout_height="70dp"
+                     android:background="#fff"
+                     android:orientation="horizontal"
+                     android:id="@+id/rdgroup"
+                    >
+            <RadioButton android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:text="微信"
+                          style="@style/radiobutton"
+                          android:drawableTop="@drawable/bg_weixin"
+                          android:textColor="#000"
+                          android:checked="true"
+                          android:id="@+id/weixin"
+                         />
+            <RadioButton android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:text="通讯录"
+                          style="@style/radiobutton"
+                          android:drawableTop="@drawable/bg_tongxunlu"
+                          android:textColor="#000"
+                          android:layout_weight="1"
+                          android:id="@+id/tongxunlu"
+                         />
+            <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:textColor="#000"
+                         android:text="发现"
+                         style="@style/radiobutton"
+                         android:drawableTop="@drawable/bg_faxian"
+                         android:id="@+id/faxian"
+            />
+            <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:textColor="#000"
+                         android:text="我"
+                         style="@style/radiobutton"
+                         android:drawableTop="@drawable/bg_wo"
+                         android:id="@+id/wo"
+            />
+        </RadioGroup>
+</LinearLayout>
+
